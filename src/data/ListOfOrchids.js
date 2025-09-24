@@ -1,0 +1,178 @@
+const ListOfOrchids = [
+  {
+    id: "1",
+    name: "Taichung Beauty",
+    rating: 5,
+    isSpecial: true,
+    image: "https://barritaorchids.com/cdn/shop/products/Cf592_1024x1024.jpg",
+    color: "Pink",
+    origin: "Taiwan",
+    category: "Cattleya",
+  },
+  {
+    id: "2",
+    name: "Phalaenopsis White",
+    rating: 4,
+    isSpecial: false,
+    image:
+      "https://images.squarespace-cdn.com/content/v1/51835eb5e4b0999588582742/1600907362112-RC8I5M5DN7YGGCGC6L8B/Phalaenopsis%2BOrchid%2BFlowers.jpg",
+    color: "White",
+    origin: "Vietnam",
+    category: "Phalaenopsis",
+  },
+  {
+    id: "3",
+    name: "Dendrobium Nobile",
+    rating: 4,
+    isSpecial: false,
+    image:
+      "https://www.gardenia.net/wp-content/uploads/2023/05/dendrobium-nobile.webp",
+    color: "Purple",
+    origin: "Thailand",
+    category: "Dendrobium",
+  },
+  {
+    id: "4",
+    name: "Cymbidium Yellow",
+    rating: 5,
+    isSpecial: true,
+    image:
+      "https://flowermoxie.com/cdn/shop/files/47390475652_a849c9c576_o.jpg?v=1713199973",
+    color: "Yellow",
+    origin: "China",
+    category: "Cymbidium",
+  },
+  {
+    id: "5",
+    name: "Oncidium Dancing Lady",
+    rating: 3,
+    isSpecial: false,
+    image:
+      "https://orchidrepublic.com/cdn/shop/articles/Beautiful-Orchid-Oncidium-944730888_6000x4000_57a8beff-4272-48fc-b1c7-b478d9700b75_680x428.jpg?v=1750657017",
+    color: "Yellow",
+    origin: "Brazil",
+    category: "Oncidium",
+  },
+  {
+    id: "6",
+    name: "Vanda Blue Magic",
+    rating: 5,
+    isSpecial: true,
+    image: "https://live.staticflickr.com/6039/6311666521_20dca36ce0_b.jpg",
+    color: "Blue",
+    origin: "India",
+    category: "Vanda",
+  },
+  {
+    id: "7",
+    name: "Paphiopedilum Maudiae",
+    rating: 4,
+    isSpecial: false,
+    image:
+      "https://www.eliteorchids.com/wp-content/uploads/2017/03/Paphiopedilum-Maudiae-Vinicolor-1-.jpg",
+    color: "Green",
+    origin: "Laos",
+    category: "Paphiopedilum",
+  },
+  {
+    id: "8",
+    name: "Miltonia Sunset",
+    rating: 3,
+    isSpecial: false,
+    image:
+      "https://www.orchideen-wichmann.de/media/13/45/84/1753563375/miltonia_sunset_hybride_1.jpeg?ts=1753563375",
+    color: "Orange",
+    origin: "Colombia",
+    category: "Miltonia",
+  },
+  {
+    id: "9",
+    name: "Brassavola Nodosa",
+    rating: 4,
+    isSpecial: false,
+    image:
+      "https://www.gardenia.net/wp-content/uploads/2023/04/K8NJWtR16MHfDGTmCINkIuBgbrYeCBKd44ZN3iTi-780x520.webp",
+    color: "White",
+    origin: "Mexico",
+    category: "Brassavola",
+  },
+  {
+    id: "10",
+    name: "Epidendrum Red",
+    rating: 3,
+    isSpecial: false,
+    image:
+      "https://clickorchid.com/cdn/shop/files/epired_e5f00b2e-823b-4288-81a6-87b49b385940.jpg?v=1691744471",
+    color: "Red",
+    origin: "Costa Rica",
+    category: "Epidendrum",
+  },
+  {
+    id: "11",
+    name: "Zygopetalum Hybrid",
+    rating: 4,
+    isSpecial: false,
+    image:
+      "https://img1.wsimg.com/isteam/ip/46ce370c-18dc-476c-8aff-1c1f1b29a90a/Zygo%20Advance%20Australia%20'HOF'%20AM%3AAOS%20fresh-0001.jpg",
+    color: "Purple-Green",
+    origin: "Brazil",
+    category: "Zygopetalum",
+  },
+  {
+    id: "12",
+    name: "Coelogyne Cristata",
+    rating: 5,
+    isSpecial: true,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn9yh6Yt1916Tf5-BGCLGmoo32DAFdKGPUVN53fETizZVLRJPwHKuVh7kb_VlXBilnTtciQ14fJSlXcPrJ9hqLHt9yLsBkBScw4QcJwlw",
+    color: "White",
+    origin: "Himalaya",
+    category: "Coelogyne",
+  },
+  {
+    id: "13",
+    name: "Catasetum Orchid",
+    rating: 3,
+    isSpecial: false,
+    image:
+      "https://secretgarden.ro/cdn/shop/articles/Catasetum-flowers_1100x.jpg?v=1706514589",
+    color: "Brown",
+    origin: "Ecuador",
+    category: "Catasetum",
+  },
+  {
+    id: "14",
+    name: "Maxillaria Tenuifolia",
+    rating: 4,
+    isSpecial: false,
+    image:
+      "https://www.thespruce.com/thmb/N6co-gpBuz8paXWV8TbGATMETw8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1313768242-c12a662139ac45a080182f87c8a4d606.jpg",
+    color: "Red",
+    origin: "Mexico",
+    category: "Maxillaria",
+  },
+  {
+    id: "15",
+    name: "Stanhopea Orchid",
+    rating: 5,
+    isSpecial: true,
+    image:
+      "https://theorchidpatio.com.au/cdn/shop/files/s-l1600_d025fbc2-4650-431b-a765-a930f959b3ff.jpg?v=1687321732",
+    color: "Yellow-Red",
+    origin: "Peru",
+    category: "Stanhopea",
+  },
+  {
+    id: "16",
+    name: "Lycaste Aromatica",
+    rating: 4,
+    isSpecial: false,
+    image:
+      "https://darkstarorchids.com.au/wp-content/uploads/2021/09/Lyc._aromatica.jpg",
+    color: "Yellow",
+    origin: "Guatemala",
+    category: "Lycaste",
+  },
+];
+
+export default ListOfOrchids;
